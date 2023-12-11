@@ -5,11 +5,11 @@ This project implements different data structures in Python.
 - [x] Queue
 - [x] Node
 ## Planned
-- [] Stack
-- [] Set
+- [ ] Stack
+- [ ] Set
 
 ### LinkedList
-Uses *Node*.
+Uses **Node**.
 #### Methods
 - Add
 - Remove
