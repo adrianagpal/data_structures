@@ -1,5 +1,6 @@
-from queue import Queue
+from ..queue import Queue
 import pytest
+from ..node import Node
 
 def test_enqueue():
     queue = Queue()
