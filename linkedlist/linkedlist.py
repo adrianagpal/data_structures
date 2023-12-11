@@ -1,6 +1,6 @@
-from node import Node
+from ..node import Node
 
-class Linkedlist:
+class LinkedList:
     def __init__(self):
         self._size = 0
 

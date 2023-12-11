@@ -1,5 +1,5 @@
-from linkedlist import Linkedlist
-from node import Node
+from ..linkedlist import LinkedList
+from ..node import Node
 
 def test_node():
 
@@ -16,20 +16,20 @@ def test_assign_next():
     assert None == y.next
 
 def test_add():
-    list = Linkedlist()
+    list = LinkedList()
     list.add(40)
     list.add(70)
 
     assert 2 == list.size
 
-    list = Linkedlist()
+    list = LinkedList()
     list.add(40)
     list.add(70)
 
     assert list.last.data == 70
 
 def test_remove():
-    list = Linkedlist()
+    list = LinkedList()
 
     assert False == list.remove(0)
     list.add(10)
@@ -44,7 +44,7 @@ def test_remove():
     assert None == list.get(2)
 
 def test_get():
-    list = Linkedlist()
+    list = LinkedList()
     list.add(10)
     list.add(20)
     list.add(30)
@@ -60,7 +60,7 @@ def test_get():
     assert None == list.get(-1)
 
 def test_count():
-    list = Linkedlist()
+    list = LinkedList()
     list.add(10)
     list.add(20)
     list.add(30)
@@ -75,12 +75,12 @@ def test_count():
     assert 1 == list.count(-1)
     assert 0 == list.count(30)
 
-    lista = Linkedlist()
+    lista = LinkedList()
 
     assert 0 == lista.count(30)
 
 def test_find():
-    list = Linkedlist()
+    list = LinkedList()
     list.add(10)
     list.add(20)
     list.add(30)
@@ -95,12 +95,12 @@ def test_find():
     assert None == list.find(55)
     assert 5 == list.find(-1)
 
-    lista = Linkedlist()
+    lista = LinkedList()
 
     assert None == lista.find(30)
 
 def test_findall():
-    list = Linkedlist()
+    list = LinkedList()
     list.add(10)
     list.add(20)
     list.add(30)
@@ -116,6 +116,6 @@ def test_findall():
     assert [5] == list.findall(-1)
     assert [1,4] == list.findall(20)
 
-    lista = Linkedlist()
+    lista = LinkedList()
 
     assert None == lista.findall(30)
